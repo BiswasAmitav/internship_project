@@ -10,6 +10,9 @@
 
     <!-- EXTERNAL CSS LINK -->
     <link rel="stylesheet" href="style\style.css">
+    <style>
+        
+    </style>
     <title>Dashboard</title>
 </head>
 
