@@ -55,21 +55,74 @@
 
 
             <p>
-                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <!-- <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Link with href
-                </a>
-                <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Button with data-bs-target
-                </button> -->
+                </a> -->
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Post Job
+                </button>
             </p>
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    <form>
+                        <div class="mb-3">
+                            <label for="Company Name" class="form-label">Company Name</label>
+                            <input type="text" class="form-control" id="">
+                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPosition" class="form-label">Position</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="JObDesc" class="form-label">JOb Description</label>
+                            <input type="text" class="form-control" id="JobDesc">
+                        </div>
+                        <div class="mb-3">
+                            <label for="CTC" class="form-label">CTC</label>
+                            <input type="text" class="form-control" id="CTC">
+                        </div>
+                        <!-- <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div> -->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Company Name</th>
+      <th scope="col">Position</th>
+      <th scope="col">CTC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>TCS</td>
+      <td>Software Developer</td>
+      <td>8 LPA</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Google</td>
+      <td>Digital Marketing</td>
+      <td>12 LPA</td>
+    </tr>
+    <!-- <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr> -->
+  </tbody>
+</table>
         </div>
-
+        
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
