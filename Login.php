@@ -12,7 +12,7 @@
             background-image: url('bg1.jpg');
             background-size: cover;
         }
-        /* form {
+        form {
             /* background-color: #fff; */
             margin-top: 6em;
             margin-left: 15em;
@@ -20,7 +20,7 @@
             margin-bottom:15em;
             padding: 30px;
             box-shadow: 10px 10px 8px 10px #888888;
-        } */
+        }
     </style>
     <title>Register</title>
 </head>
