@@ -27,7 +27,7 @@
 
 <body>
     <div class="container">
-        <form action="">
+        <form method="POST">
             <div class="mb-3">
                 <label for="exampleInputName" class="form-label">Full Name</label>
                 <input type="text" class="form-control" id="exampleInputName">
@@ -53,7 +53,7 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div> -->
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
             <!-- <input type="submit" class="btn btn-primary" value="Submit"> -->
             <br>
             Already Registered? <a style="text-decoration: none;" href="Login.php">Login</a>
