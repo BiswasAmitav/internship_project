@@ -25,5 +25,16 @@ if(isset($_POST['submit'])){
     else{
         echo"Error: Couid not able to execute $sql. ". mysqli_error($conn);
     }
+}
+
+session_start();
+if(isset($_POST['Login'])){
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+
+    $query="SELECT * FROM users WHERE 'email'='$email' AND 'password'='$password'";
+}
+
+mysqli_close($conn);
 
 ?>
