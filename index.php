@@ -140,29 +140,33 @@
             </p>
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                    <form>
+                    <form action="" method="POST">
                         <div class="mb-3">
                             <label for="Company Name" class="form-label">Company Name</label>
-                            <input type="text" class="form-control" id="">
+                            <input type="text" class="form-control" id="" name="Cname">
                             <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPosition" class="form-label">Position</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="pos">
                         </div>
                         <div class="mb-3">
                             <label for="JObDesc" class="form-label">JOb Description</label>
-                            <input type="text" class="form-control" id="JobDesc">
+                            <input type="text" class="form-control" id="JobDesc" name="Jdesc">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill" class="form-label">Skills Required</label>
+                            <input type="text" class="form-control" id="skills" name="skills">
                         </div>
                         <div class="mb-3">
                             <label for="CTC" class="form-label">CTC</label>
-                            <input type="text" class="form-control" id="CTC">
+                            <input type="text" class="form-control" id="CTC" name="CTC">
                         </div>
                         <!-- <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div> -->
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
                     </form>
                 </div>
             </div>
