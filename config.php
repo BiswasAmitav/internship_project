@@ -15,8 +15,15 @@ if(isset($_POST['submit'])){
     $name=$_POST['name'];
     $email=$_POST['email'];
     $number=$_POST['phone_no'];
-    $password=$_POST['password']
-}
+    $password=$_POST['password'];
 
+
+    $sql="INSERT INTO 'users'('Name','email','password','phone_no') VALUES ($name,$email,$password,$number)"
+    if(mysqli_query($conn,$sql)){
+        echo"Records inserted successfully.";
+    }
+    else{
+        echo"Error: Couid not able to execute $sql. ". mysqli_error($conn);
+    }
 
 ?>
