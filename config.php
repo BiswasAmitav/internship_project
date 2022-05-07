@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
     $skills=$_POST['skills'];
     $CTC=$_POST['CTC'];
 
-    $sql="INSERT INTO 'jobs'('cname','position','Jdesc','skills','CTC') VALUES ('$cname','$pos','$Jdesc','$skills','$CTC')"
+    $sql="INSERT INTO 'jobs'('cname','position','Jdesc','skills','CTC') VALUES ('$cname','$pos','$Jdesc','$skills','$CTC')";
 
 
     if(mysqli_query($conn,$sql)){
@@ -67,5 +67,14 @@ if(isset($_POST['submit'])){
 
 
 mysqli_close($conn);
+
+
+if(isset($_POST['apply'])){
+    $name=$_POST['name'];
+    $name=$_POST['qual'];
+    $name=$_POST['apply'];
+    $name=$_POST['year'];
+}
+
 
 ?>
