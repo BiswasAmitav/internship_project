@@ -197,6 +197,41 @@
       <td colspan="2">Larry the Bird</td>
       <td>@twitter</td>
     </tr> -->
+
+<?php
+
+        $sql="Select cname,position,CTCfrom Jobs";
+        $result=mysqli_query($conn,$sql);
+        if($result->num_rows>0){
+            while($rows=$result->fetch_assoc()){
+                $i=0;
+                echo"
+                <td>".++$i."</td>
+                <td>".$rows['cname']."</td>
+                <td>".$rows['position']."</td>
+                <td>".$rows['CTC']."</td>
+                ";
+            }
+        }
+/*
+ echo"
+ <tbody>
+ <tr>
+        <td>".++$i."</td>
+                <td>".$rows['cname']."</td>
+                <td>".$rows['position']."</td>
+                <td>".$rows['CTC']."</td>
+  </tr>              
+  </tbody>              
+ ";
+ else{
+     echo"";
+ }
+*/
+
+?>
+
+
                 </tbody>
             </table>
         </div>
