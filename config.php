@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     $password=$_POST['password'];
 
 
-    $sql="INSERT INTO 'users'('Name','email','password','phone_no') VALUES ($name,$email,$password,$number)"
+    $sql="INSERT INTO 'users'('Name','email','password','phone_no') VALUES ($name,$email,$password,$number)";
     if(mysqli_query($conn,$sql)){
         echo"Records inserted successfully.";
     }
@@ -74,7 +74,16 @@ if(isset($_POST['apply'])){
     $name=$_POST['qual'];
     $name=$_POST['apply'];
     $name=$_POST['year'];
-}
+
+    $sql="INSERT INTO `candidates`(`name`,`apply`,`qual`,`year`) VALUES('$name','$apply','$qual','$year')";
+    mysqli_query($conn,$sql);
+
+    var_dump($sql);
+    die();
+    mysqli_query($conn,$sql);
+
+}   
+
 
 
 ?>
